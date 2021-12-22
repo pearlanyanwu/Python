@@ -1,0 +1,37 @@
+# 1) create a LIST with at least 4 elements.
+myList = ["peach", "banana", "cherry", "orange"]
+print(myList)
+
+# 2) add an element.
+myList.append("grape")
+print(myList)
+
+# 3) remove an element.
+myList.remove("cherry")
+print(myList)
+
+# 4) insert an element somewhere in the middle.
+myList.insert(3, "apple")
+print(myList)
+
+# 5) add another array of the same data type.
+myList2 = ["pear", "strawberry", "mango", "kiwi"]
+myList.append(myList2)
+print(myList)
+
+# 6) add another array of a different data type.
+aTuple = ("watermelon", "raspberry", "blueberry", "lemon")
+myList.append(aTuple)
+print(myList2)
+
+# 7) create a range of negative numbers.
+negList = list(range(-1, -6, -1))
+print(negList)
+
+# 8) create a range of positive numbers.
+posList = list(range(1, 6, 1))
+print(posList)
+
+# 9) insert a range, if allowed.
+myList.insert(2, negList)
+print(myList)
