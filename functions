@@ -1,0 +1,60 @@
+def varToMutableObject(globalVar):
+    listB = ["mon", "tues", "wednes", "thurs", "fri"]
+    globalVar = listB
+    print(f'before: {globalVar}')
+    globalVar.clear()
+    listC = ["day 1", "day 2", "day 3", "day 4", "day 5"]
+    globalVar.append(listC)
+    print(f'after: {globalVar}')
+# listB and the global variable were effected.
+
+def varToImmutableObject(globalVar):
+    myTuple = ("jan", "feb", "mar", "apr", "may")
+    str3 = "the global variable was {}, ".format(globalVar)
+    globalVar = myTuple
+    str4 = "now the global variable is {}.".format(globalVar)
+    print(str3 + str4)
+# the global variable was effected. i changed the var to a tuple.
+
+def updateMutableObject():
+    listA = ["red fruit", "orange fruit", "yellow fruit"]
+    print(listA)
+    listA[0:] = ["apple", "orange", "banana"]
+    print(listA)
+# listA was effected. i replaced all 3 elements in the original list with direct objects.
+
+def updateVariable2(globalVar):  # not using "global" keyword
+    str1 = "the global variable was {}, ".format(globalVar)     # 110
+    globalVar = globalVar + 5                                   # 110 + 5
+    str2 = "now the global variable is {}.".format(globalVar)   # 115
+    print(str1 + str2)
+# the global variable was effected. i added 5 to it.
+
+def updateVariable():   # using "global" keyword
+    global globalVar
+    str7 = "the global variable was {}, ".format(globalVar)     # 100
+    globalVar = globalVar + 10                                  # 100 + 10
+    str8 = "now the global variable is {}.".format(globalVar)   # 110
+    print(str7 + str8)
+# the global variable was effected. i added 10 to it.
+
+globalVar = 100
+
+def main():
+    print('''1. state the global variable.''')
+    print('''the global variable is {}.'''.format(globalVar))
+    print('''2a. update the global variable using "global" keyword.''')
+    updateVariable()
+    print('''2b. update the global variable not using the "global" keyword.''')
+    updateVariable2(globalVar)
+    print('''3. update a mutable object -- (list).''')
+    updateMutableObject()
+    print('''4. set global variable to an immutable object -- (tuple).''')
+    varToImmutableObject(globalVar)
+    print('''5. set global variable to a mutable object -- (list).''')
+    print('''change the value of the object and show that they are different.''')
+    varToMutableObject(globalVar)
+    
+main()
+
+### NOTE: start from def main() (line 43). ###
