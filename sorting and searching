@@ -1,0 +1,60 @@
+import random
+listOne = random.sample(range(100),random.randrange(1, 51, 10))
+listTwo = random.sample(range(100),random.randrange(1, 51, 10))
+listThree = random.sample(range(100),random.randrange(1, 51, 10))
+
+print(f'List one: {listOne}')
+# user input: 3 numbers to search for/count in list one.
+first = int(input('First value to find: '))
+second = int(input('Second value to find: '))
+third = int(input('Third value to find: '))
+
+# search and count for 3 inputs in list one.
+print(f'Searching for {first}s, {second}s, & {third}s in List one...')
+for y in listOne:
+    if y == first:
+        print(f'{first}!')
+    elif y == second:
+        print(f'{second}!')
+    elif y == third:
+        print(f'{third}!')
+    else:
+        print('---')
+print(f'Count: {first} --> {listOne.count(first)}; {second} --> {listOne.count(second)}; {third} --> {listOne.count(third)}.')
+print(f'There are {(len(listOne))} elements in list one.')
+
+# bubble sort.
+print('Entering the bubbleSort() function for list two.')
+print(f'List two before bubble sort is {listTwo}')
+def bubbleSort(listTwo):
+    for m in range(0, len(listTwo)-1):
+        for n in range(0, len(listTwo)-m-1):
+            if listTwo[n] > listTwo[n+1]:
+                listTwo[n], listTwo[n+1] = listTwo[n+1], listTwo[n]
+bubbleSort(listTwo)
+print(f'List two after bubble sort is {listTwo}')
+print('Exiting bubbleSort() function for list two.')
+
+# sorting: prep for binary search.
+listThree.sort()
+
+# binary search.
+print('Entering binarySearch() function for list three.')
+print(f'List three: {listThree}')
+element = int(input('Enter an element to search for in list three: '))
+
+def binarySearch(listThree, element):
+    start = 0; end = len(listThree)-1
+    print(f'Binary searching for element {element}...')
+    while start <= end:
+        mid = (start + end) // 2
+        if element == listThree[mid]:
+            return mid
+        elif element < listThree[mid]:
+            end = mid-1
+        elif element > listThree[mid]:
+            start = mid+1
+    return -1
+print(f'Element {element} was found at index {binarySearch(listThree, element)}.')
+print(f'There are {(len(listThree))} elements in list three.')
+print('Exiting binarySearch() function for list three.')
