@@ -1,0 +1,35 @@
+# 1) create a SET with at least 4 elements.
+mySet = {"robin", "crow", "seagull", "parrot"}
+print(mySet)
+
+# 2) add an element.
+mySet.add("parakeet")
+print(mySet)
+
+# 3) remove an element.
+mySet.remove("robin")
+print(mySet)
+
+# 4) insert an element somewhere in the middle.
+print(mySet)
+
+# 5) add another array of the same data type.
+mySet2 = {"owl", "crane", "stork", "flamingo"}
+# mySet.add(mySet2)
+print(mySet)
+
+# 6) add another array of a different data type.
+print(mySet)
+
+# 7) create a range of negative numbers.
+negSet = set(range(-10, -51, -10))
+print(negSet)
+
+# 8) create a range of positive numbers.
+posSet = set(range(10, 51, 10))
+print(posSet)
+
+# 9) insert a range, if allowed.
+print(mySet)
+
+### NOTE: sets are unordered, so you cannot insert elements nor can you add other data types. ###
