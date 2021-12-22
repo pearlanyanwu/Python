@@ -1,0 +1,52 @@
+def invalidVar():
+    print('''this is the invalidVar() function.''')
+    var = ['mon', 'tue', 'wed', 'thur', 'fri']
+    print('''going to try and print a list called "var" using an incorrect variable name, "varr.''')
+    try:
+        print(varr)
+    except NameError:
+        print('''name error: the variable 'varr' does not exist in this program.''')
+    finally:
+        print('''make sure that your variable names are spelled correctly throughout your program.''')
+        print('''exiting invalidVar() function.''')
+        
+    days = {"jan": 31, "feb": 28, "mar": 31, "apr": 30, "may": 31, "jun": 30,
+            "jul": 31, "aug": 31, "sep": 30, "oct": 31, "nov": 30, "dec": 31}
+    print('''this is the second part of the invalidVar() function.''')
+    print('''going to try to aquire the number of a days of any one month by typing in the month's name.''')
+    month = input('''enter a month (abbreviated to its first 3 letters) to learn the number of days: ''')
+    try:
+        print(f'{month} had {days[month]} days.')
+    except KeyError:
+        print(f'key error: {month} does not exist in this dictionary.')
+    
+def handleDivision(num1, num2):
+    print('''this is the handleDivision() function. here, i will handle the division() function.''')
+    print('''attempting to divide {} and {}.'''.format(num1, num2))
+    try:
+        division(num1, num2)
+    except ZeroDivisionError:
+        print('''zero division error: denominator should not be zero.''')
+    except TypeError:
+        print('''type error: both inputs must be numbers only.''')
+    finally:
+        print('''exiting the handleDivision() function.''')
+        
+def division(num1, num2):
+    print('''this is the division() function. here, i will divide 2 numbers.''')
+    quotient = int(num1 / num2)
+    print(f'{num1} / {num2} = {quotient}')
+    print('''exiting the division() function.''')
+
+def main():
+    division(24, 8)
+    # division(3, 0) -- cannot divide. needs to be handled.
+    handleDivision(24, 8)
+    handleDivision(3, 0)
+    handleDivision(6.3, 0.7)
+    handleDivision("hello", 9)
+    invalidVar()
+    invalidVar()
+main()
+
+### NOTE: start from def main() (line 41). ###
