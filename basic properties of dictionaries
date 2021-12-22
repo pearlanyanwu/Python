@@ -1,0 +1,33 @@
+# 1) create a DICTIONARY with a 4 elements.
+myDict = {"AZ": "Arizona", "CA": "California", "DE": "Delaware", "FL": "Florida"}
+print(myDict)
+
+# 2) add an element.
+myDict["GA"] = "Georgia"
+print(myDict)
+
+# 3) remove an element.
+del myDict["CA"]
+print(myDict)
+
+# 4) insert an element somewhere in the middle.
+print(myDict)
+
+# 5) add another array of the same data type.
+myDict["ID"] = "Idaho"
+print(myDict)
+
+# 6) add another array of a different data type.
+myDict["mySet"] = mySet
+print(myDict)
+
+# 7) create a range of negative numbers.
+print(myDict)
+
+# 8) create a range of positive numbers.
+print(myDict)
+
+# 9) insert a range, if allowed.
+print(myDict)
+
+### NOTE: dictionaries can only have elments added and removed. ###
