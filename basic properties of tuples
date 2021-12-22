@@ -1,0 +1,31 @@
+# 1) create a TUPLE with at least 4 elements.
+myTuple = ("red", "orange", "yellow", "green")
+print(myTuple)
+
+# 2) add an element.
+print(myTuple)
+
+# 3) remove an element.
+print(myTuple)
+
+# 4) insert an element somewhere in the middle.
+print(myTuple)
+
+# 5) add another array of the same data type.
+print(myTuple)
+
+# 6) add another array of a different data type.
+print(myTuple)
+
+# 7) create a range of negative numbers.
+negTuple = tuple(range(-5, -21, -5))
+print(negTuple)
+
+# 8) create a range of positive numbers.
+posTuple = tuple(range(5, 21, 5))
+print(posTuple)
+
+# 9) insert a range if allowed.
+print(myTuple)
+
+### NOTE: tuples are immutable, so they cannot be modified after they have been created. ###
