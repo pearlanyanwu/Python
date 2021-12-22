@@ -1,37 +1,30 @@
 # 1) input variable types we learned about.
-print("1. enter 3 variables: an integer, a float, a string.")
 i = input('integer: ')
 f = input('float: ')
 s = input('string: ')
-
+--------------------------------------------------------------------------------------------------------
 # 2) input strings with the quoting styles we learned about.
-print("2. enter 4 strings.")
 string = input('string one: ')
 string2 = input("string two: ")
 string3 = input('''string three: ''')
 string4 = input("""string four: """)
-
+--------------------------------------------------------------------------------------------------------
 # 3) output all variables in a row.
-print("3. output all 7 variables --> row.")
 print(i, f, s, string, string2, string3, string4)
-
+--------------------------------------------------------------------------------------------------------
 # 4) output all variables into a column.
-print("4. output all 7 variables --> column.")
 variables = [i, f, s, string, string2, string3, string4]
 for y in variables:
     print(y)
-    
+--------------------------------------------------------------------------------------------------------
 # 5) format output the numbers to 2 decimal places.
-print("5. output the integer and float to 2 decimal places.")
 print("integer = {:.2f}".format(float(i)))
 print("float = {:.2f}".format(float(f)))
-
+--------------------------------------------------------------------------------------------------------
 # 6a) output using string formatting.
-print("6a. output variables using string formatting.")
 print('{}, {}, {}'.format(i, f ,s))
 print('{}, {}, {}, {}'.format(string, string2, string3, string4))
-
+--------------------------------------------------------------------------------------------------------
 # 6b) output using 'f' formatted string literals.
-print("6b. output variables using 'f' formatted string literals notation.")
 print(f'{i}, {f}, {s}')
 print(f'{string}, {string2}, {string3}, {string4}')
