@@ -1,0 +1,80 @@
+print ("number 1")
+# 1) set a variable to the result of a math expression.
+#    using addition, subtraction, multiplication, division.
+#    using integer and float values.
+num1 = 5
+num2 = 6.2
+num3 = 18
+num4 = 9.3
+num5 = 3.7
+value = (num1 + num2) - num3 * (num4 / num5)
+print(value)
+
+print("number 2")
+# 2) set a variable to the result of a combination of string values.
+string1 = "computer science "
+string2 = "course 110a"
+result = string1 + string2
+print(result)
+
+print("number 3")
+# 3) set a variable to the result of the combination of string, integer and float.
+#    (use type casting conversions)
+string3 = "i would like "
+integer = 1
+int2str = str(integer) + ' pound of meat and '
+float = 2
+float2str = str(float) + ' pounds of cheese.'
+result2 = string3 + int2str + float2str
+print(result2)
+
+print("number 4, part a")
+# 4a) using the given variables, create a loop that executes iterations.
+a = 1.3
+b = 4
+iterations = 7
+i = 0
+while (i < iterations):
+    a = a * b
+    print(a)
+    i = i + 1
+    
+print("number 4, part b")
+# 4b) reset iterations to 7. create a loop that executes iterations - 1.
+iterations = 7
+j = 0 
+while (j < iterations):
+    iterations = iterations - 1 
+    print(iterations)
+    
+print("number 4, part c")
+# 4c) set iterations to a number between 6 and 12. create a loop that:
+#     if iterations is even, subtract 0.5 from b, display a and b.
+#     if iterations is odd, multiply a by b, display a.
+iterations = 8 
+k = 0 
+while (k < 5):
+    if (iterations % 2 == 0):
+        b - 0.5 
+        print(a, b)
+        k = k + 1
+    else:
+        a * b
+        print(a)
+        k = k + 1
+        
+print("number 5")
+# 5) create a while loop that contains both an if statement and a for loop.
+x = 1 
+hot = 80 # (degrees)
+cold = 40 # (degrees)
+sample = 24 # (degrees)
+strSample = str(sample) # (in degrees)
+while (x == 1):
+    for x in range(1):
+        if sample <= cold:
+            print(strSample + " degrees is freezing.")
+        elif strSample >= hot:
+            print(strSample + " degrees is boiling.")
+        else:
+            print(strSample + " degrees is neither freezing nor boiling.")
