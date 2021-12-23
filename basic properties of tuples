@@ -28,4 +28,4 @@ print(posTuple)
 # 9) insert a range if allowed.
 print(myTuple)
 
-### NOTE: tuples are immutable, so they cannot be modified after they have been created. ###
+### NOTE: tuples are immutable, which means that they cannot be modified after they have been created. ###
