@@ -1,4 +1,4 @@
-# 1) create a DICTIONARY with a 4 elements.
+# 1) create a DICTIONARY with at least 4 elements.
 myDict = {"AZ": "Arizona", "CA": "California", "DE": "Delaware", "FL": "Florida"}
 print(myDict)
 
