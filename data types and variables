@@ -17,7 +17,7 @@ typ_after = type(j)
 print(j, typ_after)
 --------------------------------------------------------------------------------------------------------
 # (b) float to a string
-print("Converting a float to a string")
+print("Converting a float to a string.")
 f = 34.7
 typ_before = type(f)
 print(f, typ_before)
@@ -26,7 +26,7 @@ typ_after = type(g)
 print(g, typ_after)
 --------------------------------------------------------------------------------------------------------
 # (c) string to an integer
-print("Converting a string to an integer")
+print("Converting a string to an integer.")
 s = '867'
 typ_before = type(s)
 print(s, typ_before)
