@@ -10,17 +10,17 @@ value = (num1 + num2) - num3 * (num4 / num5)
 print(value)
 --------------------------------------------------------------------------------------------------------
 # 2) set a variable to the result of a combination of string values.
-string1 = "computer science "
-string2 = "course 110a"
+string1 = "This is "
+string2 = "computer science."
 result = string1 + string2
 print(result)
 --------------------------------------------------------------------------------------------------------
 # 3) set a variable to the result of the combination of string, integer and float.
 #    (use type casting conversions)
-string3 = "i would like "
-integer = 1
-int2str = str(integer) + ' pound of meat and '
-float = 2
+string3 = "I would like "
+integer = 2
+int2str = str(integer) + ' pounds of meat and '
+float = 2.5
 float2str = str(float) + ' pounds of cheese.'
 result2 = string3 + int2str + float2str
 print(result2)
@@ -59,9 +59,9 @@ while (k < 5):
 --------------------------------------------------------------------------------------------------------
 # 5) create a while loop that contains both an if statement and a for loop.
 x = 1 
-hot = 80 # (degrees)
-cold = 40 # (degrees)
-sample = 24 # (degrees)
+hot = 80                # (degrees)
+cold = 40               # (degrees)
+sample = 24             # (degrees)
 strSample = str(sample) # (in degrees)
 while (x == 1):
     for x in range(1):
