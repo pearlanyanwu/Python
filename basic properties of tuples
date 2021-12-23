@@ -1,5 +1,5 @@
 # 1) create a TUPLE with at least 4 elements.
-myTuple = ("red", "orange", "yellow", "green")
+myTuple = ("Red", "Orange", "Yellow", "Green")
 print(myTuple)
 
 # 2) add an element.
