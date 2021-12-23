@@ -1,20 +1,20 @@
 # 1) create a FROZENSET with at least 4 elements.
-myFrozenSet = (["cat", "dog", "frog", "fish"])
+myFrozenSet = (["Cat", "Dog", "Frog", "Fish"])
 print(myFrozenSet)
 
 # 2) add an element.
-myFrozenSet.append("snake")
+myFrozenSet.append("Snake")
 print(myFrozenSet)
 
 # 3) remove an element.
 print(myFrozenSet)
 
 # 4) insert an element somewhere in the middle.
-myFrozenSet.insert(3, "hamster")
+myFrozenSet.insert(3, "Hamster")
 print(myFrozenSet)
 
 # 5) add another array of the same data type.
-myFrozenSet2 = (["turtle","pig", "horse", "goat"])
+myFrozenSet2 = (["Turtle","Pig", "Horse", "Goat"])
 myFrozenSet.append(myFrozenSet2)
 print(myFrozenSet)
 
