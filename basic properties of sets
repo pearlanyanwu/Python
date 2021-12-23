@@ -1,21 +1,20 @@
 # 1) create a SET with at least 4 elements.
-mySet = {"robin", "crow", "seagull", "parrot"}
+mySet = {"Robin", "Crow", "Seagull", "Parrot"}
 print(mySet)
 
 # 2) add an element.
-mySet.add("parakeet")
+mySet.add("Parakeet")
 print(mySet)
 
 # 3) remove an element.
-mySet.remove("robin")
+mySet.remove("Robin")
 print(mySet)
 
 # 4) insert an element somewhere in the middle.
 print(mySet)
 
 # 5) add another array of the same data type.
-mySet2 = {"owl", "crane", "stork", "flamingo"}
-# mySet.add(mySet2)
+mySet2 = {"Owl", "Crane", "Stork", "Flamingo"}
 print(mySet)
 
 # 6) add another array of a different data type.
