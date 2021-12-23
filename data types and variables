@@ -8,7 +8,7 @@ print(p, type(p))
 --------------------------------------------------------------------------------------------------------
 # (3) use the type conversion functions to convert a(n):
 # (a) integer to float.
-print("converting an integer to a float.")
+print("Converting an integer to a float.")
 i = 56
 typ_before = type(i)
 print(i, typ_before)
@@ -17,7 +17,7 @@ typ_after = type(j)
 print(j, typ_after)
 --------------------------------------------------------------------------------------------------------
 # (b) float to a string
-print("converting a float to a string")
+print("Converting a float to a string")
 f = 34.7
 typ_before = type(f)
 print(f, typ_before)
@@ -26,7 +26,7 @@ typ_after = type(g)
 print(g, typ_after)
 --------------------------------------------------------------------------------------------------------
 # (c) string to an integer
-print("converting a string to an integer")
+print("Converting a string to an integer")
 s = '867'
 typ_before = type(s)
 print(s, typ_before)
