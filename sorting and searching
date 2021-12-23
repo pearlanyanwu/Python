@@ -4,13 +4,13 @@ listTwo = random.sample(range(100),random.randrange(1, 51, 10))
 listThree = random.sample(range(100),random.randrange(1, 51, 10))
 --------------------------------------------------------------------------------------------------------
 print(f'List one: {listOne}')
-# user input: 3 numbers to search for/count in list one.
+# user input: 3 numbers to search for and count in list one.
 first = int(input('First value to find: '))
 second = int(input('Second value to find: '))
 third = int(input('Third value to find: '))
 
 # search and count for 3 inputs in list one.
-print(f'Searching for {first}s, {second}s, & {third}s in List one...')
+print(f'Searching for {first}s, {second}s, & {third}s in list one...')
 for y in listOne:
     if y == first:
         print(f'{first}!')
@@ -20,7 +20,7 @@ for y in listOne:
         print(f'{third}!')
     else:
         print('---')
-print(f'Count: {first} --> {listOne.count(first)}; {second} --> {listOne.count(second)}; {third} --> {listOne.count(third)}.')
+print(f'Count: {first} --> {listOne.count(first)}; {second} --> {listOne.count(second)}; {third} --> {listOne.count(third)}')
 print(f'There are {(len(listOne))} elements in list one.')
 --------------------------------------------------------------------------------------------------------
 # bubble sort.
