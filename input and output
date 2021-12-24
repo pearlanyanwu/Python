@@ -1,13 +1,13 @@
 # 1) input variable types we learned about.
-i = input('integer: ')
-f = input('float: ')
-s = input('string: ')
+i = input('Integer: ')
+f = input('Float: ')
+s = input('String: ')
 --------------------------------------------------------------------------------------------------------
 # 2) input strings with the quoting styles we learned about.
-string = input('string one: ')
-string2 = input("string two: ")
-string3 = input('''string three: ''')
-string4 = input("""string four: """)
+string = input('String one: ')
+string2 = input("String two: ")
+string3 = input('''String three: ''')
+string4 = input("""String four: """)
 --------------------------------------------------------------------------------------------------------
 # 3) output all variables in a row.
 print(i, f, s, string, string2, string3, string4)
@@ -18,8 +18,8 @@ for y in variables:
     print(y)
 --------------------------------------------------------------------------------------------------------
 # 5) format output the numbers to 2 decimal places.
-print("integer = {:.2f}".format(float(i)))
-print("float = {:.2f}".format(float(f)))
+print("Integer = {:.2f}".format(float(i)))
+print("Float = {:.2f}".format(float(f)))
 --------------------------------------------------------------------------------------------------------
 # 6a) output using string formatting.
 print('{}, {}, {}'.format(i, f ,s))
