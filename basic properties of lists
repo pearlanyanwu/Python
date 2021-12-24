@@ -22,7 +22,7 @@ print(myList)
 # 6) add another array of a different data type.
 aTuple = ("Watermelon", "Raspberry", "Blueberry", "Lemon")
 myList.append(aTuple)
-print(myList2)
+print(myList)
 
 # 7) create a range of negative numbers.
 negList = list(range(-1, -6, -1))
