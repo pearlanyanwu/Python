@@ -28,6 +28,7 @@ print(negFrozenSet)
 
 # 8) create a range of positive numbers.
 posFrozenSet = frozenset(range(100, 301, 50))
+print(posFrozenSet)
 
 # 9) insert a range, if allowed.
 myFrozenSet.insert(5, posFrozenSet)
