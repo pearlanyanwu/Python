@@ -13,11 +13,11 @@ third = int(input('Third value to find: '))
 print(f'Searching for {first}s, {second}s, & {third}s in list one...')
 for y in listOne:
     if y == first:
-        print(f'{first}!')
+        print(f'{First}!')
     elif y == second:
-        print(f'{second}!')
+        print(f'{Second}!')
     elif y == third:
-        print(f'{third}!')
+        print(f'{Third}!')
     else:
         print('---')
 print(f'Count: {first} --> {listOne.count(first)}; {second} --> {listOne.count(second)}; {third} --> {listOne.count(third)}')
